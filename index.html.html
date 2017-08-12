@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <meta name="author" content="David Nelson">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="portfolio.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="portfolio.js"></script>
+  </head>
+  <body>
+    <div id="Navbar">
+    <div class="btn"><a href="#Welcome" class="navi">Welcome</a></div>
+    <div class="btn"><a href="#Projects" class="navi">Projects</a></div>
+    <div class="btn"><a href="#About" class="navi">About</a></div>
+    <div class="btn"><a href="#Contact" class="navi">Contact</a></div>
+    </div>
+    <main id=OnePage>
+      <div id="Welcome" class="content">
+        <h1>David Nelson</h1>
+        <h3>Devloper, Engineer, Problem Solver</h3>
+        <img class="subContent" cite="https://artful-purgatory.tumblr.com/post/103909511547/lots-and-lots-of-kobolds-for-pathfinders-monster" src="https://i.warosu.org/data/tg/img/0365/89/1417823719483.jpg" alt="" width="70%">
+      </div>
+      <div id="Projects" class="content">
+        <h2>Projects</h2>
+        <div class="projectWrapper">
+          <img src="phoneAppLayout.png" alt="">
+          <div class="subContent">
+            <p>Spider Webs</p>
+            <p>Call blocking service for android phones</p>
+            <ul><p>Main activity: <em>Black list process</p></em>
+              <li><p></p>Phone call comes in</li>
+              <li><p>Broadcast reciever alerts phone state listener</p></li>
+              <li><p>Phone state listener checks if phone is ringing</p></li>
+              <li><p>Ringer muted</p></li>
+              <li><p>Phone number parsed and hashed</p></li>
+            <li><p>Hash table is searched for match</p></li>
+            <li><p>Call denied if match is found</p></li>
+              <li><p>Ringer unmuted</p></li>
+              <li><p>Normal operation resumes</p></li>
+            </ul>
+            <ul>
+            <em><p>Design justificaitons</p></em>
+              <li><p>Broadcast reciever allows for the app to run in background.</p></li>
+              <li><p>251 entry hash table for look ups; quick searches </p></li>
+              <li><p>251 is the largest prime before 255</p></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <div id="About" class="content">
+        <h2>About</h2>
+        <div class="subContent">
+          <h3>Achievements and Licenses</h3>
+          <p><dfn title="BSA Troop 358">
+            Eagle Scout</dfn></p>
+          <p><dfn title="License #32647">
+            Engineer in Training</dfn></p>
+        </div>
+        <div class="subContent">
+          <h3>Education</h3>
+          <p><dfn title="University of Washington, Seattle">
+            B.S. Bioresources Science and Engineering, Minor Chemistry</dfn></p>
+          <p><dfn title="Clark College">
+            Currently studying Computer Science and Engineering</dfn><p>
+        </div>
+        <div class="subContent">
+          <h3>Programmed in</h3>
+          <p><dfn title="GDB, recursive algorithms, data structures, dynamic memory allocation, and file I/O">
+            C</dfn></p>
+          <p><dfn title="GUIs with swing, server/client applications, multi-threaded applicaitons, event handling, and file I/O">
+            Java</dfn></p>
+          <p><dfn title="forms, accessing other applications, and macros">
+            VBA</dfn></p>
+          <p><dfn title="front end development mark up">
+            HTML</dfn></p>
+          <p><dfn title="front end develpment styling and animation">
+            CSS</dfn></p>
+          <p><dfn title="front end development interactivity">
+            JavaScript</dfn></p>
+          <p><dfn title="Android app development">
+            XML</dfn></p>
+          <p><dfn title="databses, queries, tables, and forms">
+            SQL</dfn></p>
+          <p><dfn title="Zenity, Git, Vi, make files, and compiling">BASH</dfn></p>
+        </div>
+        <div class="subContent">
+          <h3>Speaks</h3>
+          <p><dfn title="native speaker">
+            English</dfn></p>
+          <p><dfn title="working proficiency">
+            Spanish</dfn></p>
+          <p><dfn title="limited proficiency">
+            Japanese</dfn></p>
+        </div>
+        <div class="subContent">
+          <h3>Industries worked</h3>
+          <p><dfn title="project tracking and visual management">
+          Truck Manufacturing</dfn></p>
+          <p><dfn title="alkaline humic acid extraction, fermentation, mixing/seperation, and product QA/QC">
+          Organic Chemical Fertilizers</dfn></p>
+          <p><dfn title="transesterfication reactions, sizing safety pressure relief valves, and tank labels">
+          Biofuels</dfn></p>
+          <p><dfn title="wet end chemistry, emissions testing, kraft pulping, sulfite pulping, and PIDs">
+          Pulp and Paper</dfn></p>
+          <p><dfn title="pH, COD, BOD, turbidity, treatment of microbial induced corrosion, and prototype development">
+          Water Treatment</dfn></p>
+        </div>
+      </div>
+      <div id="Contact" class="content">
+        <div class="notSub">
+          <div><h2>Contact</h2></div>
+          <div><a href="https://www.linkedin.com/in/dwnelsoneit/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="" width="50px"/></a></div>
+        </div>
+        <div class="subContent">
+          <form id="contactForm" action="potfolio.html" method="post">
+            <div class="form">
+              <div>
+                <input type="text" id="name" placeholder="Name" class="singleLine"></input>
+                <input type="tel" id="num" placeholder="Phone" class="singleLine"></input>
+                <input type="email" placeholder=Email class="singleLine"></input>
+              </div>
+                <input type="textarea" id="message" placeholder="message"></input>
+                <input type="button" id="email" value="Submit"></input>
+              <div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
